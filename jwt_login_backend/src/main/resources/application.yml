@@ -1,0 +1,28 @@
+
+
+
+#DataSource Config
+spring:
+  datasource:
+    username: root
+    password: hyh567
+    url: jdbc:mysql:///jwt_login?userUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+
+server:
+  port: 8080
+
+
+#配置日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      #      全局配置id生成策略
+      id-type: auto
+      logic-delete-value: 0
+      logic-not-delete-value: 1
