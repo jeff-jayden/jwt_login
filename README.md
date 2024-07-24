@@ -1,5 +1,8 @@
 # jwt_login
 
+登录态：
+   https://www.cnblogs.com/88223100/p/One-article-to-understand-the-common-login-schemes-of-the-front-and-rear-end.html
+
 实现的大概思路：
 1.  前端传用户名密码，后端接收查询用户，使用 userId和password 生成jwt返回给前端
 2.  前端存储到localstorage中，访问其他敏感数据，将token放到header请求头中请求
